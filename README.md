@@ -27,9 +27,9 @@ Servicio para calificar la experiencia con el docente en distintas asignaturas d
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Catedra<br>2. CRUD Usuario Administrador<br>3. CRUD Usuario|
-|CRUD dependiente|1. CRUD Review {depende de} CRUD Catedra y CRUD Profesor<br>2. CRUD Cliente {depende de} CRUD Localidad|
-|Listado<br>+<br>detalle| 1. Listado de habitaciones filtrado por tipo de habitación, muestra nro y tipo de habitación => detalle CRUD Habitacion<br> 2. Listado de reservas filtrado por rango de fecha, muestra nro de habitación, fecha inicio y fin estadía, estado y nombre del cliente => detalle muestra datos completos de la reserva y del cliente|
+|CRUD simple|1. CRUD Catedra<br>2. CRUD Usuario Administrador<br>3. CRUD Usuario <br>4. CRUD Turno|
+|CRUD dependiente|1. CRUD Review {depende de} CRUD Catedra <br>2. CRUD Profesor {depende de} CRUD Catedra y CRUD Turno|
+|Listado<br>+<br>detalle| 1. Listado de reviews filtrado por profesor, muestra calificacion y comentario => detalle CRUD Review<br> 2. Listado de catedras filtrado por nombre de catedra, muestra nro de habitación, fecha inicio y fin estadía, estado y nombre del cliente => detalle muestra datos completos de la reserva y del cliente|
 |CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva|
 
 
