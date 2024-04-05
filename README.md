@@ -16,9 +16,43 @@
 Servicio para calificar la experiencia con el docente en distintas asignaturas de la carrera de sistemas de la UTN Rosario
 
 ### Modelo
-![imagen del modelo]()
+```mermaid
+classDiagram
 
-*Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
+    Catedra "1..*" -- "1..*" Profesor
+    Profesor "1..*" -- "1..*" Comision
+    Profesor "1" -- "1..*" Review
+    Usuario "1" -- "1..*" Review
+    Comision "1..*" -- "1" Turno
+    Comision "1..*" -- "1..*" Usuario
+
+    class Usuario{
+        nombre : String
+        legajo : Int
+    }
+
+    class Review{
+        puntuacion: Int
+        descripcion: String
+    }
+
+    class Profesor{
+        nombre: String
+    }
+
+    class Comision{
+        codigo: Int
+    }
+
+    class Turno{
+        nombre: String
+    }
+
+    class Catedra {
+        nombre: String
+        id: String      
+    }
+```
 
 ## Alcance Funcional 
 
@@ -36,7 +70,7 @@ Regularidad:
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Catedra<br>2. CRUD Usuario Administrador<br>3. CRUD Usuario<br>4. CRUD Turno<br>5. CRUD Review<br>6. CRUD Profesor|
+|CRUD |1. CRUD Catedra<br>2. CRUD Usuario Administrador<br>3. CRUD Usuario<br>4. CRUD Turno<br>5. CRUD Review<br>6. CRUD Profesor<br>7. CRUD Comision|
 |CUU/Epic|1. Escribir una review<br>2. Dar de alta un profesor<br>3. Dar de alta una catedra<br> 4. Consultar reviews de un profesor/catedra|
 
 
