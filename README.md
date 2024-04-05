@@ -46,6 +46,8 @@ Adicionales para Aprobación
 
 |Req|Detalle|
 |:-|:-|
-|Listados |1. Estadía del día filtrado por fecha muestra, cliente, habitaciones y estado <br>2. Reservas filtradas por cliente muestra datos del cliente y de cada reserve fechas, estado cantidad de habitaciones y huespedes|
-|CUU/Epic|1. Eliminar reviews que no cumplan <br>2. Cancelación de reserva|
-|Otros|1. Envío de recordatorio de reserva por email|
+|Listados |1. Listado de todas las reviews ordenas/filtradas basandose en la calificacion (positivas - negativas)|
+|CUU/Epic|1. Eliminar reviews que contengan malas palabras <br>2. Solicitar aprobacion de una review por un moderador <br>3. Registrarse como nuevo usuario|
+|Otros|1. Verificar reviews automaticamente antes de enviarlas a un moderador <br> 2. Comprobar que el alumno pertenezca a la institucion <br> 3. Comprobar que el alumno haya cursado la materia de la que escribe la review |
+
+
